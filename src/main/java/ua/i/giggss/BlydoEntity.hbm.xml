@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ua.i.giggss.BlydoEntity" table="blydo" schema="public" catalog="Restaurant">
+        <id name="idBlydo">
+            <column name="idBlydo" sql-type="integer"/>
+        </id>
+        <property name="nazvanie">
+            <column name="nazvanie" sql-type="text"/>
+        </property>
+        <property name="kategoriya">
+            <column name="kategoriya" sql-type="text" not-null="true"/>
+        </property>
+        <property name="stoimost">
+            <column name="stoimost" sql-type="double precision" precision="-1"/>
+        </property>
+        <property name="ves">
+            <column name="ves" sql-type="double precision" precision="-1"/>
+        </property>
+    </class>
+</hibernate-mapping>

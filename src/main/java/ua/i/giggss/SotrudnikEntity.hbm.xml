@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ua.i.giggss.SotrudnikEntity" table="sotrudnik" schema="public" catalog="Restaurant">
+        <id name="idSotrudnik">
+            <column name="idSotrudnik" sql-type="integer"/>
+        </id>
+        <property name="familiya">
+            <column name="familiya" sql-type="text"/>
+        </property>
+        <property name="imya">
+            <column name="imya" sql-type="text"/>
+        </property>
+        <property name="daterojdeniya">
+            <column name="daterojdeniya" sql-type="date" not-null="true"/>
+        </property>
+        <property name="telefon">
+            <column name="telefon" sql-type="integer"/>
+        </property>
+        <property name="doljnosty">
+            <column name="doljnosty" sql-type="text"/>
+        </property>
+        <property name="oklad">
+            <column name="oklad" sql-type="integer"/>
+        </property>
+    </class>
+</hibernate-mapping>
